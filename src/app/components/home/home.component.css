@@ -1,0 +1,341 @@
+
+
+.contenedor-principal{
+ background-color: white;
+}
+.inicio {
+  position: relative; /* Asegúrate de que la posición sea relativa o absoluta según sea necesario */
+  z-index: 99; /* Valor inferior al z-index del navbar */
+}
+.servicios{
+ margin-top: 90px;
+ margin-bottom: 90px;
+}
+
+.contenedor-p-servicios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+.h2-servicios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span-nuestros{
+  font-size: 44px;
+  justify-self: center;
+}
+.span-servicios{
+  justify-self: center;
+  font-size: 47px;
+  color:  #4160cd;
+  font-weight: bold;
+}
+.p-servicios{
+  width: 60%;
+  font-size: 18px;
+  font-weight: 400;
+}
+.span-p{
+  color:  #4160cd;
+  font-weight: bold;
+}
+.experiencias{
+  margin: 10px;
+}
+
+
+/**Texto intro**/
+.contenedor {
+
+  height:40px;
+
+}
+.container-intro{
+  color: var(--color-white);
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+}
+.iam-intro{
+  display: flex;
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 1;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: escribir 2s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  border-right: 2px solid  #604bff;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.producciones {
+  background-color: black;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+.producciones-images{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+
+}
+.experiencias {
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.image-container {
+
+  overflow: hidden;
+}
+.label-slice{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.titles-headings{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+}
+.over-p{
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%; /* La imagen ocupará el 100% del contenedor */
+  height: auto; /* Mantiene la relación de aspecto original de la imagen */
+  display: block; /* Elimina el espacio adicional por debajo de la imagen */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente, ajusta el valor de '0.5' según tus preferencias */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.reviews-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas de igual ancho */
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45px;
+}
+
+.snip1533 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #9e9e9e;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid #4160cd;
+
+}
+
+.snip1533 *,
+.snip1533 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+  padding: 13% 10% 12%;
+}
+
+.snip1533 figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #4160cd;
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.snip1533 h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.snip1533 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+/* Estilos para pantallas muy grandes (mayores de 2560px) */
+@media screen and (min-width: 2561px) {
+  .a-item-menu {
+    font-size: 30px; /* Ajusta según tus necesidades */
+    font-weight: bold;
+  }
+  .img-logo {
+    width: 200px; /* Ajusta según tus necesidades */
+    height: 120px; /* Ajusta según tus necesidades */
+  }
+}
+
+/* Estilos para pantallas grandes (mayores de 1440px) */
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .a-item-menu {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .img-logo {
+    width: 150px;
+    height: 90px;
+  }
+  .reviews-container{
+
+    margin-left: 108px;
+  }
+
+}
+
+/* Estilos para pantallas medianas (mayores de 1024px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .a-item-menu {
+    font-size: 20px; /* Ajusta según tus necesidades */
+  }
+  .img-logo {
+    width: 120px; /* Ajusta según tus necesidades */
+    height: 72px; /* Ajusta según tus necesidades */
+  }
+  .iam-intro{
+    font-size: 30px;
+  }
+  .reviews-container{
+
+    margin-left: 38px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+  .a-item-menu {
+    font-size: 16px; /* Ajusta según tus necesidades */
+  }
+  .img-logo {
+    width: 100px; /* Ajusta según tus necesidades */
+    height: 60px; /* Ajusta según tus necesidades */
+  }
+  .iam-intro{
+    font-size: 26px;
+  }
+  .reviews-container{
+
+    grid-template-columns: 1fr 1fr; /* Define tres columnas de igual ancho */
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .a-item-menu {
+    font-size: 16px; /* Ajusta según tus necesidades */
+  }
+  .img-logo {
+    width: 100px; /* Ajusta según tus necesidades */
+    height: 60px; /* Ajusta según tus necesidades */
+  }
+  .iam-intro{
+    font-size: 26px;
+  }
+  .reviews-container{
+    grid-template-columns: 1fr ; /* Define tres columnas de igual ancho */
+    grid-template-rows: auto;
+    margin-left: 188px;
+  }
+}
+
+/* Estilos para pantallas extra pequeñas (hasta 480px) */
+@media screen and (max-width: 480px) {
+  .a-item-menu {
+    font-size: 11px;
+  }
+  .img-logo {
+    width: 80px;
+    height: 40px;
+  }
+  .iam-intro{
+    font-size: 18px;
+  }
+  .reviews-container{
+
+    grid-template-columns: 1fr ; /* Define tres columnas de igual ancho */
+    grid-template-rows: auto;
+  }
+}
+

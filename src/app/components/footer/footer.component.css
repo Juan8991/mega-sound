@@ -1,0 +1,84 @@
+.footer-container{
+  display: flex;
+  flex-direction: column;
+}
+.info-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+}
+.footer-img{
+  width: 100%;
+}
+.footer-info{
+  color: white;
+}
+.footer-title{
+  font-weight: 700;
+}
+.item-list{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.icon-list {
+  color: white;
+  margin-right: 8px;
+
+}
+.item{
+  display: flex;
+}
+.derechos{
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Estilos para pantallas grandes (mayores de 1440px) */
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .a-item-menu {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .img-logo {
+    width: 150px;
+    height: 90px;
+  }
+}
+
+/* Estilos para pantallas medianas (mayores de 1024px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .a-item-menu {
+    font-size: 20px; /* Ajusta según tus necesidades */
+  }
+  .img-logo {
+    width: 120px; /* Ajusta según tus necesidades */
+    height: 72px; /* Ajusta según tus necesidades */
+  }
+}
+
+/* Estilos para pantallas pequeñas (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+  .a-item-menu {
+    font-size: 16px; /* Ajusta según tus necesidades */
+  }
+  .img-logo {
+    width: 100px; /* Ajusta según tus necesidades */
+    height: 60px; /* Ajusta según tus necesidades */
+  }
+}
+
+/* Estilos para pantallas extra pequeñas (hasta 480px) */
+@media screen and (max-width: 480px) {
+  .a-item-menu {
+    font-size: 11px;
+  }
+  .img-logo {
+    width: 80px;
+    height: 40px;
+  }
+}
